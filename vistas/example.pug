@@ -1,0 +1,44 @@
+html 
+    head 
+        title= title 
+        link(rel="stylesheet", href="styles.css")
+
+    body 
+        header  
+            h2 Welcome!         
+            nav           
+                a( href="/") Home 🏠
+                a( href="/create") Create CV ✏️
+                a( href="/cv") See CV 👁️
+                a( href="/example") Basic CV 📜
+               
+        div 
+            h2(id="firstname") Nombre 
+            h2(id="surname") Apellido 
+            h3(id="profession") Profesión 
+            hr   
+            div 
+            p(id="city") Cuidad
+            p(id="country") País 
+            hr
+            div 
+            p(id="mail") Email 
+            p(id="telephone") 012346789
+            p(id="others") github 
+            p(id="others2") linkedIn 
+            hr
+            div 
+            p(id="experience") Experience 
+            hr
+            div 
+            p(id="technologies") Technlogies 
+            hr
+            div 
+            p(id="languages") Languages 
+            hr
+            div 
+            p(id="training") Training 
+            hr
+            div 
+            p(id="courses") Courses
+    script(scr='json.js')

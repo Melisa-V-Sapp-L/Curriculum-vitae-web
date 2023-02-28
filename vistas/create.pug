@@ -1,0 +1,99 @@
+html 
+  head 
+    title= title 
+    link(rel="stylesheet", href="styles.css")
+
+  body 
+    header  
+        h2 Welcome!    
+        nav 
+             a( href="/") Home 🏠
+             a( href="/create") Create CV ✏️
+             a( href="/cv") See CV 👁️
+             a( href="/example") Basic CV 📜
+    
+    form(action="") 
+      
+      div
+        h2 Create or edit your curriculum vitae web.
+      
+      div 
+        label( for="name") First name
+        input(type="text"
+          id="firstname"
+          placeholder="First name"
+          required)
+
+        label(for="surname") Surname
+        input(type="text"
+          id="surname"
+          placeholder="Surname"
+          required)
+
+      div
+        label(for="profession") Profession
+        input(type="text"
+          id="profession"
+          placeholder="Profession"
+          required)
+      hr
+      div 
+        label( for="city") City
+        input(type="text"
+          id="city"
+          placeholder="City"
+          required)
+ 
+        label( for="country") Country
+        input(  type="text"
+          id="country"
+          placeholder="Country"
+          required)
+
+        div
+        label( for="mail") Email
+        input(type="text"
+          id="mail"
+          placeholder="Email"
+          required) 
+        label( for="telephone") Telephone
+        input(type="text"
+          id="telephone"
+          placeholder="Telephone"
+          required)
+
+      div 
+        label( for="others") Others contacts
+        input(type="text" id="others" placeholder="LinkedIn, GitHub, etc" required)
+
+        label(for="others2") Others contacts 2
+        input(type="text" id="others2" placeholder="LinkedIn, GitHub, etc" required)
+      hr
+      div 
+        label( for="experience") Experience
+        
+        textarea(id="experience" placeholder="Experience")
+      hr  
+      div   
+        label( for="courses" ) Courses
+        
+        textarea(id="courses" placeholder="Courses")  
+      hr   
+      div 
+        label( for="techno") Technologies
+        
+        textarea(id="technologies" placeholder="Technologies") 
+      hr  
+      div    
+        label( for="languages") Languages
+        
+        textarea(id="languages" placeholder="Languages")
+      hr
+      div 
+        label( for="training") Training
+        
+        textarea(id="training" placeholder="Training")
+      hr  
+
+      Button(id="btnsave") 💾
+  script(src='functions.js')

@@ -1,0 +1,54 @@
+html 
+    head 
+        title= title 
+        link(rel="stylesheet", href="styles.css")
+
+    body 
+        header 
+            h2 Welcome!
+            nav 
+                a( href="/") Home 🏠
+                a( href="/create") Create CV ✏️
+                a( href="/cv") See CV 👁️
+                a( href="/example") Basic CV 📜
+              
+    div 
+       each dato in data 
+            h5= `Actualización Nº: ${dato.id}`
+            hr
+
+            div 
+               h2= `${dato.name}` 
+               h2= `${dato.surname}`
+               h3= `Profesión: ${dato.profession}`
+            hr
+
+            div 
+               p= `${dato.city}, ${dato.country}`
+            hr
+
+            div 
+               p= `${dato.mail}`
+               p= `${dato.telephone}`
+               p= `${dato.others}` 
+               p= `${dato.others2}` 
+            hr
+
+            div 
+               p= `Experiencia laboral: ${dato.experience}` 
+            hr
+
+            div 
+               p= `Tecnologías: ${dato.technologies}` 
+            hr
+
+            div 
+               p= `Idiomas: ${dato.languages}` 
+            hr
+
+            div 
+               p= `Formación academico: ${dato.training}` 
+            hr
+            
+            div 
+               p= `Cursos: ${dato.courses}`
